@@ -1,0 +1,29 @@
+#clock-grid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 560px;
+    height: 448px;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: -250px;
+    margin-left: -250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    border: 1px solid lightgray;
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+}
+
+.filled-block {
+    background-color: seagreen;
+}
+
+.inv-block {
+    border: 1px solid transparent;
+    background-color: transparent;
+}
