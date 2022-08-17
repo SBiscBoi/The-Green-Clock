@@ -8,7 +8,7 @@ var column = 0;
 
 var complete = false;
 
-var setBlocks = []; //impliment data read from a file
+var setBlocks = []; //possibly impliment data read from a file
 
 const startDate = new Date("Augest 13 2022");
 //console.log(startDate);
@@ -58,7 +58,7 @@ function killExcess(){
 function calcFills(sDate, nDate){
     //find total amount of days past start date
     let diff = nDate.getTime() - sDate.getTime();
-    var days = Math.ceil(diff / (1000 * 3600 * 24));
+    let days = Math.ceil(diff / (1000 * 3600 * 24));
     //mod 7 to get amount of blocks to fill
     var fillAmu = 0;
     if (days >= 7){
